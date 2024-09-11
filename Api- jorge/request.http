@@ -1,0 +1,23 @@
+GET http://localhost:3000/libros HTTP/1.1
+###
+GET http://localhost:3000/libros/2 HTTP/1.1
+###
+POST http://localhost:3000/crear HTTP/1.1
+Content-Type: application/json 
+
+{
+            "nombre": "Si, si es contigo",
+            "autor":"Calle y poche",
+            "year":"2020"
+}
+
+###
+
+PUT http://localhost:3000/actualizar/4 HTTP/1.1
+Content-Type: application/json 
+
+{
+  "autor": "Daniela garcia"
+}
+###
+DELETE  http://localhost:3000/eliminar/2 HTTP/1.1
